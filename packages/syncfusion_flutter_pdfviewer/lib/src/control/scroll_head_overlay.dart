@@ -418,7 +418,7 @@ class ScrollHeadOverlayState extends State<ScrollHeadOverlay> {
                       ? Colors.white
                       : const Color(0xFF424242)),
               title: Text(
-                _localizations!.pdfGoToPageLabel,
+                "Betga o'tish",
                 style: _pdfViewerThemeData!
                         .paginationDialogStyle?.headerTextStyle ??
                     TextStyle(
@@ -440,7 +440,7 @@ class ScrollHeadOverlayState extends State<ScrollHeadOverlay> {
                     Navigator.of(context).pop();
                   },
                   child: Text(
-                    _localizations!.pdfPaginationDialogCancelLabel,
+                    'Bekor qilish',
                     style: _pdfViewerThemeData!
                             .paginationDialogStyle?.cancelTextStyle ??
                         TextStyle(
@@ -456,7 +456,7 @@ class ScrollHeadOverlayState extends State<ScrollHeadOverlay> {
                     _handlePageNumberValidation();
                   },
                   child: Text(
-                    _localizations!.pdfPaginationDialogOkLabel,
+                    "O'tish",
                     style: _pdfViewerThemeData!
                             .paginationDialogStyle?.okTextStyle ??
                         TextStyle(
@@ -493,7 +493,7 @@ class ScrollHeadOverlayState extends State<ScrollHeadOverlay> {
               borderSide: BorderSide(color: _themeData!.colorScheme.primary),
             ),
             contentPadding: const EdgeInsets.symmetric(vertical: 6),
-            hintText: _localizations!.pdfEnterPageNumberLabel,
+            hintText: 'Bet raqamini kiriting',
             hintStyle: _pdfViewerThemeData!
                     .paginationDialogStyle?.hintTextStyle ??
                 (TextStyle(
